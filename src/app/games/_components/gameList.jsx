@@ -25,9 +25,16 @@ export default function GameList() {
         <>
         <div className="w-full grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 px-4 my-4">
             {
-                data.map((e,i)=><Card data={e} key={i}/>)
+                data.map((e,i)=>
+                <button className="w-max h-max m-auto"
+                onClick={()=>{setModal({active:true,data:e})}}
+                key={i}
+                >
+                  <Card data={e}/>
+                </button>
+              )
             }
-        </div>
+    </div>
         <h1 className="text-center">Loading...</h1>
         </>
       )
