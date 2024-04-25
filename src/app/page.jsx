@@ -18,7 +18,7 @@ export default async function Home() {
 
         <section className="w-full border-y-2 border-green-400 bg-green-600 flex items-center justify-center py-4">
           <div className="w-[80%] text-justify text-white md:w-[50%] text-sm">
-          <p>N0013 Company, established in the year 3100, has carved out a unique niche in the gaming industry with its innovative approach. Our team comprises passionate individuals from diverse backgrounds, united in the common goal of creating a gaming environment free from toxicity. With a history rooted in creativity and resilience, we have overcome challenges to establish ourselves as pioneers in crafting games tailored for novice gamers. Our culture fosters collaboration, creativity, and inclusivity, empowering every team member to contribute their unique talents towards our shared vision. Together, we strive to redefine the gaming landscape and eradicate toxic behavior, as we believe that no player deserves to be subjected to toxicity in the gaming community.</p>
+          <p>N0013 Company, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quia, in expedita eum nisi asperiores minima. Culpa quos neque sint? Placeat at autem nulla inventore voluptates iure maxime itaque illo.</p>
           </div>
         </section>
 
