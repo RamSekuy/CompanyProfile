@@ -6,7 +6,7 @@ return(<footer className="w-full p-4 border-gray-400 text-white border-y-2 bg-gr
     
     <div className="flex justify-center items-center text-center flex-col md:flex-row relative md:h-[50px]">
         <div className="relative w-[25%] md:w-auto md:h-full aspect-square">
-            <Image src={"/logo.svg"} fill/>
+            <Image src={"/logo.svg"} fill alt="Logo"/>
         </div>
         <div className="text-nowrap md:absolute md:translate-x-full">
             <h1>N0013 Company</h1>
