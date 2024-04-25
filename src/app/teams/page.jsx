@@ -9,7 +9,7 @@ export default async function Teams() {
     <>
         <main className="w-full grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 px-[20%] sm:px-5 my-4">
             {
-                teamMemberData.map((e,i)=><div className="flex items-center justify-center"><TeamCard memberData={e} key={i}/></div>)
+                teamMemberData.map((e,i)=><div className="flex items-center justify-center" key={i}><TeamCard memberData={e}/></div>)
                 
             }
         </main>
