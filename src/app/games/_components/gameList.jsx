@@ -63,7 +63,7 @@ export default function GameList() {
     >See more...</button>
     
     {/* modal  */}
-    <div className={`fixed bg-[rgba(0,0,0,0.5)] z-50 top-0 bottom-0 right-0 left-0 ${!modal.active?"hidden":""}`}
+    <div className={`fixed bg-[rgba(0,0,0,0.5)] z-50 top-0 bottom-0 right-0 left-0 ${!modal.active?"scale-0":"scale-100"} transition-all duration-500`}
     onClick={()=>setModal(
       {
         active:false,
@@ -72,7 +72,7 @@ export default function GameList() {
       )}>
       {
         modal.data.stats?
-        <div className="z-40 w-full h-full p-4 flex justify-center items-center">
+        <div className={`z-40 w-full h-full p-4 flex justify-center items-center`}>
           {/* Image  */}
           <div className="w-full aspect-square relative">
           <Image src={modal.data.imageUrl} alt="Game Image" fill/>

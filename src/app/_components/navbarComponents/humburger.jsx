@@ -24,7 +24,7 @@ export default function Humburger({hrefList=[]}) {
             {
             hrefList.map((e,i)=>
                 <Link className={`w-full h-full text-end px-2 ${url==e.url?"bg-gray-500":""} hover:bg-gray-500 flex justify-center items-center`} href={e.url} key={i} onClick={()=>setUrl(e.url)}>
-                    <li className="w-full">{e.text}</li>
+                    <li className="w-full text-nowrap">{e.text}</li>
                 </Link>
             )
             }

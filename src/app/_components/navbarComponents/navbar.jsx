@@ -8,7 +8,7 @@ export default function Navbar(){
 
     const hrefList = [
         navbarLink("Home","/"),
-        navbarLink("AboutUs","/about-us"),
+        navbarLink("About Us","/about-us"),
         navbarLink("Games","/games"),
         navbarLink("Teams","/teams"),
     ]

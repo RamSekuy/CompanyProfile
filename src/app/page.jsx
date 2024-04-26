@@ -32,7 +32,7 @@ export default async function Home() {
 
         </div>
 
-        <Link className="mt-4 py-2 px-3 border-2 border-black bg-green-500 hover:bg-green-400 hover:border-gray-600 hover:text-gray-800" href={"/games"}>See more...</Link>
+        <a className="mt-4 py-2 px-3 border-2 border-black bg-green-500 hover:bg-green-400 hover:border-gray-600 hover:text-gray-800" href={"/games"}>See more...</a>
       </section>
 
       <section className="w-full border-y-2 border-green-400 bg-green-600 flex items-center justify-center py-4 flex-col gap-4">
