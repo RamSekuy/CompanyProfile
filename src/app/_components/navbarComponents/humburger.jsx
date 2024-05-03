@@ -1,14 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
-import { getURL } from "next/dist/shared/lib/utils";
+import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Humburger({ hrefList = [] }) {
+  const pathname = usePathname();
   const [burger, setBurger] = useState(false);
-  const [url, setUrl] = useState();
-  useEffect(() => {
-    setUrl(getURL());
-  }, []);
+
   return (
     <div className={`flex flex-col items-end h-full w-max`}>
       <button
@@ -20,17 +18,15 @@ export default function Humburger({ hrefList = [] }) {
 
       <ul
         className={`md:h-full items-center flex-col md:flex-row md:flex md:gap-2 md:static bg-black md:bg-transparent
-        ${!burger ? "hidden" : "flex absolute top-5 right-0 "}`}
+        ${!burger ? "hidden" : "flex absolute top-8 right-0 "}`}
       >
         {hrefList.map((e, i) => (
-          <li className="h-full">
+          <li className="h-full w-full text-white md:text-black" key={i}>
             <Link
               className={`w-full h-full text-end px-2 ${
-                url == e.url ? "bg-gray-600 text-white" : ""
+                pathname == e.url ? "bg-gray-600 text-white" : ""
               } hover:bg-gray-600 hover:text-white flex justify-center items-center`}
               href={e.url}
-              key={i}
-              onClick={() => setUrl(e.url)}
             >
               <p className="w-full text-nowrap">{e.text}</p>
             </Link>

@@ -2,9 +2,9 @@ import Image from "next/image";
 export default function TestimonialCard({ star = 0, customerName = "" }) {
   const renderStar = Object.keys(Array.apply(0, Array(star)));
   return (
-    <div className="min-w-[200px] w-[30%] bg-white text black border-black border-2 p-2">
+    <div className="min-w-[200px] w-[80%] md:w-[30%] bg-white text black border-black border-2 p-2">
       <h1 className="font-semibold">{customerName}</h1>
-      <div className="w-[50%] h-10 flex">
+      <div className="w-[50%] flex my-3">
         {renderStar.map((e, i) => (
           <div className="relative w-[20%] aspect-square" key={i}>
             <Image
@@ -18,7 +18,7 @@ export default function TestimonialCard({ star = 0, customerName = "" }) {
           </div>
         ))}
       </div>
-      <p className="text-xs">
+      <p className="text-xs md:text-base">
         Comment about product Lorem ipsum dolor sit amet consectetur adipisicing
         elit. Quae recusandae fugit beatae accusamus aperiam impedit consequatur
         nostrum expedita tempore iure inventore, temporibus quo odio et
